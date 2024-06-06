@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">MyWebsite</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <button id="mode-toggle">Toggle Dark Mode</button>
+    <main>
+      <section class="hero">
+        <h1>Welcome to My Website</h1>
+        <p>Explore my work and get to know me better</p>
+        <a href="#about" class="hero-button">Learn More</a>
+      </section>
+      <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>I am a YouTuber and Blogger passionate about coding and sharing knowledge. Follow me on my journey as I create and share amazing content.</p>
+      </section>
+      <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div class="project-card">
+          <h3>Project 1</h3>
+          <p>A brief description of Project 1.</p>
+        </div>
+        <div class="project-card">
+          <h3>Project 2</h3>
+          <p>A brief description of Project 2.</p>
+        </div>
+        <div class="project-card">
+          <h3>Project 3</h3>
+          <p>A brief description of Project 3.</p>
+        </div>
+      </section>
+      <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out through any of the platforms below:</p>
+
+
+
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+            <input type="email" id="email" name="email" placeholder="Your Email" required />
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        
+
+        <div class="media-buttons">
+          <a href="#" style="background: #4267b2" class="link"><i class="bx bxl-facebook"></i></a>
+          <a href="#" style="background: #1da1f2" class="link"><i class="bx bxl-twitter"></i></a>
+          <a href="#" style="background: #e1306c" class="link"><i class="bx bxl-instagram"></i></a>
+          <a href="#" style="background: #ff0000" class="link"><i class="bx bxl-youtube"></i></a>
+        </div>
+      </section>
+      <section class="profile-section">
+        <div class="profile-card">
+          <div class="image">
+            <img src="fotor-20240118193732.png" alt="" class="profile-img" />
+          </div>
+          <div class="text-data">
+            <span class="name">Dhruv Sharma</span>
+            <span class="job">Coder & Blogger</span>
+          </div>
+          <div class="buttons">
+            <button class="button">Subscribe</button>
+            <button class="button">Message</button>
+          </div>
+          <div class="analytics">
+            <div class="data">
+              <i class="bx bx-heart"></i>
+              <span class="number">60k</span>
+            </div>
+            <div class="data">
+              <i class="bx bx-message-rounded"></i>
+              <span class="number">20k</span>
+            </div>
+            <div class="data">
+              <i class="bx bx-share"></i>
+              <span class="number">12k</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 MyWebsite. All rights reserved.</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

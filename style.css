@@ -1,0 +1,331 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #e0f7fa;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: background-color 0.3s ease;
+}
+header {
+  width: 100%;
+  background-color: #00acc1;
+  padding: 15px 0;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+header .logo {
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+}
+header .nav-links {
+  list-style: none;
+  display: flex;
+}
+header .nav-links li {
+  margin: 0 15px;
+}
+header .nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+header .nav-links a:hover {
+  color: #00838f;
+}
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero {
+  width: 100%;
+  height: 60vh;
+  background: linear-gradient(to right, #00acc1, #00838f);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.hero-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 24px;
+  background-color: #006064;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.hero-button:hover {
+  background-color: #004d40;
+  transform: scale(1.05);
+}
+.about-section, .projects-section, .contact-section, .profile-section {
+  width: 100%;
+  max-width: 1200px;
+  padding: 50px 20px;
+  text-align: center;
+}
+.about-section h2, .projects-section h2, .contact-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.about-section p, .projects-section p, .contact-section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.project-card {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.project-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.profile-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 370px;
+  width: 100%;
+  background: #fff;
+  border-radius: 24px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.profile-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.profile-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 36%;
+  width: 100%;
+  border-radius: 24px 24px 0 0;
+  background-color: #00acc1;
+}
+.image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #00acc1;
+  padding: 3px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.image:hover {
+  transform: rotate(360deg);
+}
+.image .profile-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+.text-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+  text-align: center;
+}
+.text-data .name {
+  font-size: 22px;
+  font-weight: 600;
+}
+.text-data .job {
+  font-size: 15px;
+  font-weight: 400;
+  color: #666;
+}
+
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  #contact-form input,
+  #contact-form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  #contact-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #00acc1;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  #contact-form button:hover {
+    background-color: #00838f;
+  }
+
+
+.media-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+.media-buttons .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  margin: 0 8px;
+  background-color: #00acc1;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.media-buttons .link:hover {
+  transform: scale(1.1);
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.buttons .button {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 24px;
+  margin: 0 10px;
+  padding: 10px 30px;
+  background-color: #00acc1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.buttons .button:hover {
+  background-color: #00838f;
+  transform: scale(1.05);
+}
+.analytics {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.analytics .data {
+  display: flex;
+  align-items: center;
+  color: #333;
+  padding: 0 20px;
+  border-right: 2px solid #e7e7e7;
+  transition: color 0.3s ease;
+}
+.analytics .data:hover {
+  color: #00acc1;
+}
+.data i {
+  font-size: 18px;
+  margin-right: 6px;
+}
+.data:last-child {
+  border-right: none;
+}
+footer {
+  background-color: #00acc1;
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+}
+footer p {
+  margin: 0;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+.dark-mode header {
+  background-color: #444;
+}
+.dark-mode .hero {
+  background: linear-gradient(to right, #444, #222);
+}
+.dark-mode .project-card,
+.dark-mode .profile-card {
+  background: #555;
+}
+.dark-mode footer {
+  background-color: #444;
+}
+#mode-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: #00acc1;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#mode-toggle:hover {
+  background-color: #00838f;
+}
